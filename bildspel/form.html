@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<link rel="stylesheet" type="text/css" href="bildspel.css">
+</head>
+<body>
+
+<div style="margin: 44px;">
+
+	<h3>Please leave a message!</h3>
+
+	<!-- Här startar formuläret -->
+	<form name="myForm" id="myForm" action="formmail.php" onsubmit="return validateForm('myForm');" method="post">
+
+		Name: <br />
+		<input type="text" name="name" id="name" placeholder="Please enter name" pattern="[a-öA-Ö -]{1,30}" title="Can only contain the letters a-z." /><br /><br />
+
+		Email adress: <br />
+		<input type="text" name="email" id="email" placeholder="Please enter email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="For example name@domain.com" /><br /><br />
+
+		Phone number: <br />
+		<input type="text" name="phoneNumber" id="number" placeholder="Please enter phone number" pattern="[0-9]{1,15}" title="Can only contnain digits 0-9" /><br /><br />
+
+		Message: <br />
+
+		<!-- Här börjar den stora meddelanderutan -->
+		<textarea rows="10" cols="40" name="meddelande" placeholder="Write your text message here." pattern="[a-öA-Ö 0-9._%+-]{20,400}" title="Must contain at least 20 characters."></textarea><br />
+
+		<!-- Här är knappen som skickar iväg meddelandet -->
+		<input type="submit" id="submit" value="Submit"  />
+
+	</form>
+
+
+
+
+
+</div>
+
+<script type="text/javascript" src="form.js"></script>
+</body>
+</html>
