@@ -1,0 +1,362 @@
+ * {
+    margin: 0;
+    padding: 0;
+ }
+
+ body {
+    background-color: #fff4e6;
+    text-align: center;
+    padding-top: 65px;
+    height: 100%;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+
+    font-family: 'Oswald', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    overflow-x: hidden;
+
+}
+
+ /* Add a black background color to the top navigation */
+.topnav {
+    background-color: rgba(255,255,255,0.01);
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+
+
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: gray;
+    color: black;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+} 
+
+ 
+@media screen and (max-width: 768px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: left;
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+} 
+
+.main {
+    margin-top: 30px;
+}
+
+#logo {
+	width: 100px;
+	height: 40px;
+	padding-top: 5px;
+	padding-left: 10px;
+	float: left;
+}
+
+#map {
+    margin: 0 auto 0 auto;
+    height: 400px;
+    width: 100%;
+    
+}
+
+#box1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(light.jpg);
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+
+
+}
+
+#box2 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(blue.png);
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+
+}
+
+h1 {
+    font-size: 100px;
+    margin: 0px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 768px) {
+    #box1 h1 {
+        font-size: 300%;
+    }
+
+          p {
+        font-size: 100%;
+        }
+
+    #box2 h1, {
+        font-size: 300%;
+    }
+
+          p {
+        font-size: 100%;
+        }
+
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+.xop-section {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 6% 2%;
+}
+
+.xop-grid {
+    margin: 20px 0 0 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.xop-grid:after {
+    clear: both;
+}
+
+.xop-grid:after, .xop-box:before {
+    content: '';
+    display: table;
+}
+
+.xop-grid li {
+    width: 328px;
+    height: 328px;
+    display: inline-block;
+    margin: 20px;
+}
+
+.xop-box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-transition: 0.3s ease-in-out, 
+    -webkit-transform 0.3s ease-in-out;
+    -moz-transition:  0.3s ease-in-out, 
+    -moz-transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out, 
+    transform 0.3s ease-in-out, ;
+}
+
+.xop-box:hover {
+    transform: scale(1.05); 
+}
+
+.xop-img-1 {
+    background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+    url(monalisa.jpg);
+}
+
+.xop-img-2 {
+    background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+    url(davinci.jpg);
+}
+
+.xop-info {
+    position: relative;
+    width: inherit;
+    height: inherit;
+}
+
+.xop-info h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 30px;
+    padding: 100px 0 0 0;
+    line-height: 1.5;
+}
+
+.xop-info p {
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    padding: 4px 5px;
+    margin: 0 30px;
+    font-size: 14px;
+    line-height: 2;
+
+}
+
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+}
+
+.card {
+    border:3px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.title {
+    color: grey
+    font-size: 18px;
+}
+
+
+
+
+.barcontainer {
+  position: relative;
+  border-radius: 5px 5px 0 0;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 250px;
+  min-height: 25vw;
+  max-height: 50vw;
+  min-width: 40%;
+  max-width: 60%;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 768px){
+    #barcontainer { width: 90%; }
+}
+
+.barcontainerheader {
+  display: inline;
+  position: relative;
+  width: 100%;
+  margin-left: 50px;
+  margin-bottom: 200px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  background: #663399;
+  font-size: 1.2vw;
+  color: white;
+  text-align: center;
+  z-index: 0;
+}
+
+@media only screen and (max-width: 768px){
+    #barcontainerheader { width: 90%; }
+}
+
+.bar {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  border: 1px solid black;
+  border-radius: 6px 6px 0 0;
+  background: #FF8362;
+  width: 10%;
+  text-align: center;
+  color: white;
+  font-size: 1vw;
+  
+}
+
+
+.barlabel {
+  position: absolute;
+  background: #1c1919;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  font-size: 1vw;
+}
+
+.bar:nth-child(2) {
+  left: 5%;
+}
+
+.bar:nth-child(3) {
+  left: 20%;
+}
+
+.bar:nth-child(4) {
+  left: 35%;
+}
+
+.bar:nth-child(5) {
+  left: 50%;
+}
+
+.bar:nth-child(6) {
+  left: 65%;
+}
+
+.bar:nth-child(7) {
+  left: 80%;
+}
+
+
+
+
+h1 {
+    margin-top: 40px;
+    padding: 0;
+}
+
+.knockout-text-two {
+    color: white;
+    font-family: "Oswald",sans-serif;
+    background: url(tiger.gif)no-repeat;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    display: flex;
+    font-size: 25vw;
+    text-align: center;
+    width: 100%;
+
+}
