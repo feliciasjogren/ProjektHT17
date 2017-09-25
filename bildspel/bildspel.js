@@ -34,3 +34,11 @@ stopButton.addEventListener("click", function(){
 	clearInterval(timer);
 })
 
+
+$(document).ready(function(){
+	$("button").click(function(){
+		$("div").animate({
+			height: 'toggle'
+		});
+	});
+});
